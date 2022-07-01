@@ -312,67 +312,87 @@ body{
 /*-------------------SERVICES-----------------------------*/
 
 
-.services-body{
-    display: flex;
-}
+.services {}
 
-@media (max-width: 670px) {
-    .services-body{
+.services__container {}
+
+.services__body {}
+
+@media (min-width: 670px) {
+    .services__body {
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px -15px;
     }
 }
 
-.services-column {
+.services__column {
     flex: 0 1 33.333%;
 }
 
-.services-column:not(:last-child) {
-    margin: 0px 30px 0px 0px;
-}
-
-@media (max-width: 670px) {
-    .services-column {
+@media (min-width: 670px) {
+    .services__column {
         padding: 0px 15px;
     }
 }
 
 @media (max-width: 992px) {
-    .services-column {
+    .services__column {
         flex: 0 1 50%;
     }
-    .services-column:last-child {
+
+    .services__column:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .services__column:last-child {
         flex: 1 1 100%;
     }
 }
 
-.services-item {
-    min-width: 300px;
-    background-color: var(--primary-white-color);
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-    padding: 35px;
+.services__item {
     height: 100%;
-    background-color: var(--primary-white-color);
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    padding: 35px;
+}
+
+@media (max-width: 479px) {
+    .services__item {
+        padding: 25px;
+    }
 }
 
 .item-service {}
 
+.item-service_green {
+    background-color: ;
+}
 
-.item-service > *:not(:last-child){
+.item-service_green .item-service__title {
+    color: var(--primary-white-color);
+}
+
+.item-service_green .item-service__text {
+    color: var(--primary-white-color);
+}
+
+.item-service>*:not(:last-child) {
     margin: 0px 0px 10px 0px;
 }
 
-.item-service-icon {
-}
+.item-service__icon {}
 
-.item-service-title {
+.item-service__title {
     font-weight: 700;
+    letter-spacing: 0.1px;
     font-size: 24px;
-    line-height: calc(32 / 24 * 100%);
+    line-height: 133%;
 }
 
-.item-service-text {
+.item-service__text {
     color: var(--secondary-text-color);
-    line-height: calc(20 / 14 * 100%);
+    line-height: 142%;
 }
 
 
