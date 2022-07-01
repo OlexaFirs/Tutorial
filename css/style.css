@@ -38,6 +38,7 @@ body{
     line-height: 1;
     font-size: 16px;
     color: #000000;
+    font-family: Montserrat;
 }
 
 .wrapper{
@@ -49,3 +50,31 @@ body{
     max-width: 1046px;
     margin: 0px auto;
 }
+
+/*-------------------header-----------------------------*/
+
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header-container{
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+.header-logo{
+
+}
+
+.header-menu {
+    margin: 0px 0px 0px 133px
+
+}
+.menu-list{}
+.menu-item{}
+.menu-link{}
