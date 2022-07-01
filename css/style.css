@@ -196,7 +196,7 @@ body{
 .page-main-block{
 }
 
-.page-services {
+.page__services {
     position: relative;
     z-index: 2;
     margin: -111px 0px 0px 0px;
@@ -311,7 +311,6 @@ body{
 
 /*-------------------SERVICES-----------------------------*/
 
-
 .services {}
 
 .services__container {}
@@ -353,7 +352,7 @@ body{
 .services__item {
     height: 100%;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-    background-color: #fff;
+    background-color: var(--primary-white-color);
     padding: 35px;
 }
 
@@ -365,9 +364,6 @@ body{
 
 .item-service {}
 
-.item-service_green {
-    background-color: ;
-}
 
 .item-service_green .item-service__title {
     color: var(--primary-white-color);
@@ -395,9 +391,7 @@ body{
     line-height: 142%;
 }
 
-
 /*-------------------ADVENTAGES-----------------------------*/
-
 
 .advantages {
     padding: 80px 0;
@@ -448,7 +442,8 @@ body{
 
 .advantages__item {
     background-color: var(--primary-white-color);
-    padding: 30px 40px;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    padding: 30px;
     text-align: center;
 }
 
