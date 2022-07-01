@@ -156,6 +156,30 @@ body{
     }
 }
 
+/*-------------------HEADER BLOCK-----------------------------*/
+
+.header-block {
+    text-align: center;
+    
+    
+}
+
+.header-block__title {
+    font-size: 40px;
+    line-height: calc(57 / 40 * 100%);
+    font-weight: 700;
+}
+
+.header-block__title:not(:last-child){
+    margin: 0px 0px 10px 0px;;
+}
+
+.header-block__sub-title {
+    color: var(--secondary-text-color);
+    line-height: calc(20 / 14 * 100%);
+}
+
+
 /*-------------------PAGES-----------------------------*/
 
 .page{
@@ -169,6 +193,8 @@ body{
     z-index: 2;
     margin: -111px 0px 0px 0px;
 }
+
+.page__advantages {}
 
 /*-------------------MAIN BLOCK-----------------------------*/
 
@@ -277,24 +303,23 @@ body{
 
 /*-------------------SERVICES-----------------------------*/
 
-.services {}
 
-.services-container {}
-
-.services-body {
-    
+.services-body{
+    display: flex;
 }
+
 @media (max-width: 670px) {
-    .services-body {
-        display: flex;
-        flex-wrap: wrap;
+    .services-body{
         margin: 0px -15px;
     }
 }
 
 .services-column {
     flex: 0 1 33.333%;
-    /* margin: 0px 0px 30px 0px; */
+}
+
+.services-column:not(:last-child) {
+    margin: 0px 30px 0px 0px;
 }
 
 @media (max-width: 670px) {
@@ -307,15 +332,10 @@ body{
     .services-column {
         flex: 0 1 50%;
     }
-    .services-column:not(:last-child) {
-        margin: 0px 0px 30px 0px;
-    }
-
     .services-column:last-child {
         flex: 1 1 100%;
     }
 }
-
 
 .services-item {
     min-width: 300px;
@@ -346,6 +366,45 @@ body{
     color: var(--secondary-text-color);
     line-height: calc(20 / 14 * 100%);
 }
+
+
+
+
+/*-------------------ADVENTAGES-----------------------------*/
+
+
+.advantages {
+    padding: 80px 0;
+}
+
+.advantages__container {}
+
+
+.advantages__header {
+    margin: 0px 0px 50px 0px;
+}
+
+.advantages__body {}
+
+.advantages__column {}
+
+.advantages__item {}
+
+.advantages__icon {}
+
+.advantages__value {}
+
+.advantages__text {}
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------------FOOTER-----------------------------*/
