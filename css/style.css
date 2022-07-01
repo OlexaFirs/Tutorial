@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    box-sizing: border-box;
     }
 
 a {
@@ -134,9 +135,8 @@ body{
 }
 
 .menu-list{
-    display: flex;
     flex-wrap: wrap;
-
+    display: flex;
 }
 
 .menu-item:not(:last-child){
@@ -156,11 +156,18 @@ body{
     }
 }
 
-/*-------------------MAIN PAGE-----------------------------*/
+/*-------------------PAGES-----------------------------*/
+
 .page{
     flex: 1 1 auto;
 }
 .page-main-block{
+}
+
+.page-services {
+    position: relative;
+    z-index: 2;
+    margin: -111px 0px 0px 0px;
 }
 
 /*-------------------MAIN BLOCK-----------------------------*/
@@ -245,8 +252,6 @@ body{
 
 .main-block-button:not(:last-child) {
     margin-right: 10px;
-
-
     /* margin: 0px 10px 0px 0px; */
 }
 
@@ -268,6 +273,78 @@ body{
     .main-block-image {
         opacity: 0.5;
     }
+}
+
+/*-------------------SERVICES-----------------------------*/
+
+.services {}
+
+.services-container {}
+
+.services-body {
+    
+}
+@media (max-width: 670px) {
+    .services-body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px;
+    }
+}
+
+.services-column {
+    flex: 0 1 33.333%;
+    /* margin: 0px 0px 30px 0px; */
+}
+
+@media (max-width: 670px) {
+    .services-column {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-column {
+        flex: 0 1 50%;
+    }
+    .services-column:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .services-column:last-child {
+        flex: 1 1 100%;
+    }
+}
+
+
+.services-item {
+    min-width: 300px;
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    padding: 35px;
+    height: 100%;
+    background-color: var(--primary-white-color);
+}
+
+.item-service {}
+
+
+.item-service > *:not(:last-child){
+    margin: 0px 0px 10px 0px;
+}
+
+.item-service-icon {
+}
+
+.item-service-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+}
+
+.item-service-text {
+    color: var(--secondary-text-color);
+    line-height: calc(20 / 14 * 100%);
 }
 
 
