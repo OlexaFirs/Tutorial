@@ -162,8 +162,6 @@ body{
 
 .header-block {
     text-align: center;
-    
-    
 }
 
 .header-block__title {
@@ -181,12 +179,17 @@ body{
     line-height: calc(20 / 14 * 100%);
 }
 
-@media (max-width: 479px) {
+@media (max-width: 992px) {
     .header-block__title {
-        font-size: 18px;
+        font-size: 35px;
     }
 }
 
+@media (max-width: 767px) {
+    .header-block__title {
+        font-size: 30px;
+    }
+}
 
 /*-------------------PAGES-----------------------------*/
 
@@ -403,17 +406,25 @@ body{
     }
 }
 
-@media (max-width: 767px) {
-    .advantages {
-        padding: 30px 0;
-    }
-}
+
 
 .advantages__container {}
 
 
 .advantages__header {
     margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages__header {
+        padding: 30px 0;
+    }
 }
 
 .advantages__body {
@@ -469,11 +480,43 @@ body{
     font-size: 16px;
     font-weight: 700;
     line-height: calc(24 / 16 * 100%);
-
 }
 
+/*-------------------PRACTICE-----------------------------*/
 
+.page__practice {}
 
+.practice {}
+
+.practice__container {}
+
+._container {}
+
+.practice__header {}
+
+.header-block {}
+
+.header-block__title {}
+
+.header-block__sub-title {}
+
+.practice__body {}
+
+.practice__column {}
+
+.practice__item {}
+
+.item-practice {}
+
+.aitem-practice__link {}
+
+.item-practice__title {}
+
+.item-practice__text {}
+
+.item-practice__image {}
+
+._ibg {}
 
 
 
@@ -484,3 +527,7 @@ body{
 
 
 /*-------------------FOOTER-----------------------------*/
+
+.footer{
+    margin: 50px;
+}
