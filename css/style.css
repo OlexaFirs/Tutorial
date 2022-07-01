@@ -207,6 +207,8 @@ body{
 
 .page__advantages {}
 
+.page__practice {}
+
 /*-------------------MAIN BLOCK-----------------------------*/
 
 .main-block{
@@ -367,15 +369,6 @@ body{
 
 .item-service {}
 
-
-.item-service_green .item-service__title {
-    color: var(--primary-white-color);
-}
-
-.item-service_green .item-service__text {
-    color: var(--primary-white-color);
-}
-
 .item-service>*:not(:last-child) {
     margin: 0px 0px 10px 0px;
 }
@@ -484,46 +477,107 @@ body{
 
 /*-------------------PRACTICE-----------------------------*/
 
-.page__practice {}
+.practice {
+    padding: 125px 0px 80px 0px;
+}
 
-.practice {}
+@media (max-width: 993px) {
+    .practice {
+        padding: 40px 0px 80px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .practice {
+        padding: 0px 0px 40px 0px;
+    }
+}
 
 .practice__container {}
 
-._container {}
+.practice__header {
+    margin: 0px 0px 45px 0px;
+}
 
-.practice__header {}
+@media (max-width: 767px) {
+    .practice__header {
+        margin: 0px 0px 25px 0px;
+    }
+}
 
-.header-block {}
+.practice__body {
+    margin: 0px -20px -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.header-block__title {}
+.practice__column {
+    padding: 0px 20px;
+    flex: 0 1 25%;
+    margin: 0px 0px 30px 0px;
+}
 
-.header-block__sub-title {}
+@media (max-width: 1040px) {
+    .practice__column {
+        flex: 0 1 50%;
+    }
+}
 
-.practice__body {}
+@media (max-width: 630px) {
+    .practice__column {
+        flex: 0 1 100%;
+    }
+}
 
-.practice__column {}
+.practice__item {
+    
+}
 
-.practice__item {}
+.item-practice {
+    background-color: var(--primary-white-color);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
 
-.item-practice {}
+.item-practice__content {
+    padding: 30px;
+    flex: 1 1 auto;
+}
 
-.aitem-practice__link {}
+.item-practice__link {
+    color: inherit;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(24 / 16 * 100%);
+}
 
-.item-practice__title {}
+.item-practice__link:hover,
+.item-practice__link:focus {
+    text-decoration: underline;
+}
 
-.item-practice__text {}
+.item-practice__link:not(:last-child){
+    margin: 0px 0px 15px 0px;
+}
 
-.item-practice__image {}
+.item-practice__title {
+    
+}
+
+.item-practice__text {
+    color: var(--secondary-text-color);
+    line-height: calc(20 / 14 * 100%);
+}
+
+.item-practice__image {
+    display: block;
+    padding: 0px 0px 60% 0px;
+
+}
 
 ._ibg {}
-
-
-
-
-
-
-
 
 
 /*-------------------FOOTER-----------------------------*/
